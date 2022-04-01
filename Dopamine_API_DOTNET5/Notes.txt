@@ -1,0 +1,15 @@
+﻿TEST API 
+
+open cmd
+
+POST
+1. httprepl https://localhost:5001/api/todoitems
+2. post -h Content-Type=application/json -c "{"name":"walk dog","isComplete":true}"
+GET
+1. connect https://localhost:5001/api/todoitems/1
+2. get
+PUT
+1. connect https://localhost:5001/api/todoitems/1
+2. put -h Content-Type=application/json -c "{"id":1,"name":"feed fish","isComplete":true}"
+
+

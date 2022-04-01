@@ -1,0 +1,19 @@
+version: '3.4'
+
+networks:
+  frontend:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24
+
+services:
+  dopamine_api_dotnet5:
+    image: ${DOCKER_REGISTRY-}dopamineapidotnet5
+    build:
+      context: .
+      dockerfile: Dopamine_API_DOTNET5/Dockerfile
+    ports: 
+        - "9092:9092"
+    networks:
+        frontend:
+            ipv4_address: 172.20.0.2

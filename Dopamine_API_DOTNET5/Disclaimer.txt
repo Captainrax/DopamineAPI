@@ -1,0 +1,4 @@
+﻿This project is expanded from the tutorial by microsoft:
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-6.0&tabs=visual-studio
+
+
